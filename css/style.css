@@ -1,5 +1,3 @@
-
-
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +17,7 @@ body {
 .wrapper {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 30px;
 }
 
 header nav {
@@ -42,6 +40,7 @@ header nav .first-header {
     flex-direction: column;
     align-items: center;
     gap: 4px;
+    transform: rotate(-10deg);
 }
 
 header nav button {
@@ -52,6 +51,7 @@ header nav button {
     font-size: 16px;
     font-weight: 700;
     box-shadow: 10px 10px 30px black;
+    transform: rotate(10deg);
 }
 
 header nav ul li {
@@ -82,7 +82,51 @@ header nav ul li:hover::after {
     display: flex;
     justify-content: space-between;
 }
-
-.left-header h1 {
+.left-header > h1 {
+    margin: 80px 0 20px 120px;
     font-size: 50px;
+    max-width: 600px;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.left-header > .status > div > pre {
+    font-size: 25px;
+    font-family: "Inter", sans-serif;
+}
+
+.left-header> .status > div {
+    margin-left: 120px;
+    border: 3px solid black;
+    width: 570px;
+    height: 130px;
+    padding: 30px 20px 20px 30px;
+    animation: circle 3s infinite;
+    animation-delay: initial;
+    border-radius: 8px;
+}
+
+.status {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@keyframes circle {
+    0% {
+        border: 3px solid red;
+    }
+    25% { 
+        border: 3px solid blue;
+    }
+    50% {
+        border: 3px solid white;
+    }
+    75% {
+        border: 3px solid brown;
+    }
+    100% {
+        border: 3px solid red;
+    }
 }
