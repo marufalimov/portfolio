@@ -129,6 +129,7 @@ span {
     width: 32vw;
     border-radius: 50%;
     cursor: pointer;
+    box-shadow: 0 0 25px var(--bg-color);
     transition: 0.4px ease-in-out;
 }
 
@@ -145,7 +146,7 @@ span {
     max-width: 1000px;
 }
 
-.social-icons {
+.social-icons a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -156,6 +157,8 @@ span {
     font-size: 2.5rem;
     margin: 3rem 1.5rem 3rem 0;
     transition: 0.3s ease-in-out;
+    border-radius: 50%;
+    color: var(--text-color);
 }
 
 .social-icons a:hover {
@@ -217,7 +220,7 @@ span {
 .text-animation span::before {
     content: 'web  developer';
     color: var(--main-color);
-    animation:  words 20px infinite;
+    animation: name 20s infinite;
 }
 
 .text-animation span::after {
@@ -237,7 +240,7 @@ span {
     }
 }
 
-@keyframes words {
+@keyframes name {
     0%,
     20% {
         content: 'frontend developer';
@@ -259,7 +262,7 @@ span {
 
     81%, 
     100% {
-        content: 'Software  tester';
+        content: 'Software tester';
     }
 }
 
