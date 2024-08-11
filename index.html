@@ -6,24 +6,38 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
 </head>
 <body>
 
+    <div class="background">
+        <div class="close_burger">
+            <button onclick="close_burger1()" id="close_burger"><i class="ri-close-line"></i></button>
+    
+            <div class="navbar2">
+                <a href="#home" class="active">Home</a>
+                <a href="#education">Education</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+    
+        </div>
+    </div>
+
     <header class="header">
-        <a href="#home" class="logo">Alimov <span>Ma`ruf</span></a>
-
-        <i class="bx bx-menu" id="menu-icon"></i>
-
+        <a href="#home" class="logo">Alimov <span>Ma`ruf</span></a> 
+        
+        <button onclick="open_burger1()" id="open_burger"><i class="ri-menu-line"></i></button>
+        
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#education">Education</a>
             <a href="#services">Services</a>
-            <a href="#testimonials">Testimonial</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <section id="home" class="home">
+    <section id="home" class="home1">
         <div class="home-content">
             <h1>Hi, It's <span>Ma'ruf</span></h1>
             <h3 class="text-animation">I'm a <span></span></h3>
@@ -122,6 +136,52 @@
             </div>
         </div>
     </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">
+            Contact <span>Me</span>
+        </h2>
+
+        <form action="">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="full Name">
+                    <input type="email" placeholder="Email" name="" id="">
+                </div>
+                
+                <div class="input-box">
+                    <input placeholder="Phone number" type="number">
+                    <input type="text" placeholder="subject">
+                </div>
+            </div>
+
+            <div class="input-group-2">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+                <input type="submit" value="Send message" class="btn">
+            </div>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="#" class='bx bxl-github'></a>
+            <a href="#" class='bx bxl-instagram-alt'></a>
+            <a href="#" class='bx bxl-telegram'></a>
+        </div>
+
+        <ul class="list">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Testimonials</a></li>
+        </ul>
+
+        <p class="copyright">
+            Alimov Ma'ruf | All rights reserved 
+        </p>
+
+    </footer>
 
     <script src="./js/main.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
